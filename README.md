@@ -27,3 +27,6 @@ During the hackathon, I faced strict API rate limits (`Error 429`) and an invali
 *   `evaluation/`: Contains the `evaluation_report.md` and `usage_report.md` as required by the hackathon.
 *   `output.csv`: The final generated predictions for all 518 requests.
 *   `log.txt`: The AI coding session transcript.
+## 🏆 Certificate
+
+[View the HackerRank Orchestrate 2026 Certificate](./HackerRank_Certificate.pdf)
