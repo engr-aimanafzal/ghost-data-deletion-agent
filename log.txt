@@ -1,0 +1,23 @@
+--- AI CODING SESSION LOG ---
+
+[Turn 1]
+User Prompt: I need to build an AI agent for the "Ghost Data Still Exists" hackathon. I am a beginner. I need a Python script that reads dataset CSVs, checks evidence files, uses an LLM to determine if data deletion is COMPLETE or INCOMPLETE, and outputs a specific JSON schema to output.csv.
+Agent Response Summary: Provided a Python script using pandas and the OpenAI API. The script implemented incremental saving and try/except blocks to prevent crashes.
+Actions: Attempted to run locally in VS Code.
+Context: Faced persistent Windows environment PATH issues and Python execution alias errors (Microsoft Store redirect). 
+
+[Turn 2]
+User Prompt: Windows is blocking my Python installation and I am running out of time. How can I run this without installing Python locally?
+Agent Response Summary: Recommended pivoting to Google Colab (cloud-based Jupyter Notebook). Provided instructions to upload the dataset as a zip file, unzip it in Colab, and run the script there.
+Actions: Uploaded dataset to Colab. Fixed the `__file__` NameError by changing BASE_DIR to `Path(".")` to support the notebook environment.
+
+[Turn 3]
+User Prompt: The OpenAI API credits ran out during the run (Error 429). How do I switch to a free provider with a fallback list of models?
+Agent Response Summary: Recommended switching to the Groq API for free, ultra-fast inference. Updated the script to use the `groq` Python library.
+Actions: Integrated Groq API. Implemented a fallback list of models (openai/gpt-oss-120b, qwen/qwen3.8-27b) to handle 404 Model Not Found errors gracefully.
+
+[Turn 4]
+User Prompt: The Groq script is now running successfully and processing cases. What should I prepare for the submission while it runs?
+Agent Response Summary: Guided the user to prepare the required `evaluation_report.md` and `usage_report.md` files, ensuring the schema validation logic and incremental saving features were documented. Also instructed on how to package the code.zip without including the dataset or pycache folders.
+Actions: Preparing final output.csv for submission.
+Context: Final submission will include code.zip, output.csv, and log.txt.
